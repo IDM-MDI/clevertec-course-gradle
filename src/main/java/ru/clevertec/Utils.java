@@ -3,7 +3,9 @@
  */
 package ru.clevertec;
 
-public class StringUtils {
+import org.apache.commons.lang3.StringUtils;
+
+public class Utils extends StringUtils {
     public static boolean isPositiveNumber(String number) {
         return parseStringToInt(number) > 0;
     }

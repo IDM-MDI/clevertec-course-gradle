@@ -6,17 +6,17 @@ package ru.clevertec;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class StringUtilsTest {
+public class UtilsTest {
     @Test
     void isPositiveNumberShouldBeTrue() {
-        Assertions.assertTrue(StringUtils.isPositiveNumber("1"));
+        Assertions.assertTrue(Utils.isPositiveNumber("1"));
     }
     @Test
     void isPositiveNumberShouldBeFalse() {
-        Assertions.assertFalse(StringUtils.isPositiveNumber("-1"));
+        Assertions.assertFalse(Utils.isPositiveNumber("-1"));
     }
     @Test
     void isPositiveNumberShouldBeFalseByException() {
-        Assertions.assertFalse(StringUtils.isPositiveNumber(null));
+        Assertions.assertFalse(Utils.isPositiveNumber(null));
     }
 }
