@@ -19,4 +19,17 @@ public class UtilsTest {
     void isPositiveNumberShouldBeFalseByException() {
         Assertions.assertFalse(Utils.isPositiveNumber(null));
     }
+    @Test
+    void isNotEmptyShouldBeTrue() {
+        Assertions.assertTrue(Utils.isNotEmpty("test"));
+    }
+    @Test
+    void isNotEmptyShouldBeFalse() {
+        Assertions.assertFalse(Utils.isNotEmpty(""));
+    }
+
+    @Test
+    void isNotEmptyShouldBeFalseByNull() {
+        Assertions.assertFalse(Utils.isNotEmpty(null));
+    }
 }
