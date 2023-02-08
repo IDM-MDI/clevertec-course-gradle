@@ -9,9 +9,4 @@
 
 rootProject.name = 'gradle-course'
 include('utils', 'app', 'app:core', 'app:api')
-//include 'app'
-//include 'app:core'
-//findProject(':app:core')?.name = 'core'
-//include 'app:api'
-//findProject(':app:api')?.name = 'api'
 
