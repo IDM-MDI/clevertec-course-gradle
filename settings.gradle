@@ -8,5 +8,5 @@
  */
 
 rootProject.name = 'gradle-course'
-include('utils', 'app', 'app:core', 'app:api')
+include('utils', 'core', 'api')
 
